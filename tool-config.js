@@ -1,0 +1,43 @@
+export const tool = {
+  "id": "E029",
+  "title": "구심가속도 계산기",
+  "inputs_text": "접선속도 v [m/s], 회전반경 r [m]",
+  "formula": "a_c = v² / r",
+  "output_text": "중심 방향 가속도의 크기 a_c [m/s²]",
+  "assumptions": "r>0. 원운동의 법선 성분만 계산하며 속력이 바뀔 때의 접선 가속도는 포함하지 않는다. 전체 가속도라고 표기하지 않는다.",
+  "purpose": "구심가속도 계산 / 원심 실험·회전 장치 검산",
+  "sources": [
+    {
+      "label": "OpenStax · Uniform and Nonuniform Circular Motion",
+      "url": "https://openstax.org/books/university-physics-volume-1/pages/4-4-uniform-and-nonuniform-circular-motion"
+    }
+  ],
+  "slug": "eng-centripetal-acceleration",
+  "category": "역학",
+  "result_label": "중심 방향 가속도 크기 a_c",
+  "result_dimension": "acceleration",
+  "fields": [
+    {
+      "key": "v",
+      "label": "접선속도 v",
+      "dimension": "speed",
+      "example": 10,
+      "constraint": "signed",
+      "display_unit": "ms",
+      "display_value": "10"
+    },
+    {
+      "key": "r",
+      "label": "회전반경 r",
+      "dimension": "length",
+      "example": 2,
+      "constraint": "positive",
+      "display_unit": "m",
+      "display_value": "2"
+    }
+  ],
+  "site": "https://nanalab.kr/eng-centripetal-acceleration/",
+  "repository": "https://github.com/NaNaCompany/eng-centripetal-acceleration",
+  "condition": "",
+  "output_unit": "ms2"
+};
